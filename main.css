@@ -1,0 +1,150 @@
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font: 14px helvetica,arial,freesans,clean,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.container {
+    margin: 0 20px 0 320px;
+    padding-top: 80px;
+}
+
+.body {
+    display: flex;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    background: #3a4250;
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.hash {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #369;
+    text-decoration: none;
+}
+
+.hash h3 {
+    padding-top: 70px;
+    margin-top: -70px;
+    margin-bottom: 0;
+}
+.menu li {
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+pre {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+}
+.content {
+    width: 70%;
+}
+
+.sidebar {
+    margin-left: 30px;
+}
+
+textarea {
+    min-height: 140px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.types {
+    counter-reset: list -1;
+}
+[data-highlight] {
+    cursor: pointer;
+}
+
+[data-highlight]:hover {
+    text-decoration: underline;
+}
+
+li [data-highlight]{
+    padding: 5px;
+    display: inline-block;
+}
+
+
+li div[data-highlight]:hover,
+li div[data-highlight].hover {
+    background: #369;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+ul ul {
+    padding-left: 15px;
+}
+
+ul.types  li:before {
+    counter-increment: list;
+    content: counter(list) ". ";
+}
+
+span.hover,
+span[data-highlight]:hover {
+    background: brown;
+}
+
+
+#input {
+    width: 100%;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.ast-block {
+    border: 1px solid;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.ast-info {
+    border: 1px solid;
+    padding: 5px;
+}
+.ast-props {
+}
+
+.ast-item {
+    padding-left: 5px;
+}
+
+.btn {
+    padding: 0 15px;
+    line-height: 34px;
+    cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map*/

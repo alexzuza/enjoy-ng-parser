@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Parser</title>
+    <title>Enjoy Angular2 Parser</title>
+    <link rel="stylesheet" href="main.css">
     <script src="shim.min.js"></script>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">
+            <svg height="60" version="1.1" viewBox="0, 0, 500, 500" width="60" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path d="M250.696,82 L91,138.2 L116.235,347.426 L250.864,421.421 L386.186,346.424 L411.413,137.205 L250.696,82" fill="#FFFFFF"></path>
+                    <path d="M395.484,149.298 L250.323,99.795 L250.323,403.742 L371.974,336.416 L395.484,149.298" fill="#CA403A"></path>
+                    <path d="M108.92,150.189 L130.544,337.309 L250.32,403.742 L250.32,99.789 L108.92,150.189" fill="#E15855"></path>
+                    <path d="M286.417,252.193 L250.587,181.26 L221.196,250.973 L250.32,250.973 L286.417,252.193 M290.28,261.601 L250.323,280.287 L208.207,280.287 L188.41,329.804 L151.585,330.486 L250.323,110.832 L290.28,261.601 z" fill="#FFFFFF"></path>
+                    <path d="M250.32,110.832 L250.585,181.26 L283.934,251.027 L250.395,251.027 L250.32,280.243 L296.695,280.287 L318.372,330.492 L353.603,331.146 L250.32,110.832" fill="#FFFFFF"></path>
+                </g>
+            </svg>
+            <h1>Enjoy-ng-parse</h1>
+        </div>
+    </div>
     <div class="container">
-        <h1>Parser test</h1>
+        <h2>Template</h2>
         <textarea id="input"></textarea>
         <button id="runBtn" class="btn">Parse</button>
-        <h2>AST</h2>
-        <div class="body">
-            <div class="content">
-                <pre id="astCode"></pre>
-            </div>
-            <div class="sidebar">
-                <h3>Ast Nodes</h3>
-                <ul id="ast-list"></ul>
-            </div>
-        </div>
-        <h2>html.Node</h2>
-        <div class="body">
-            <div class="content">
-                <pre><code id="htmlCode"></code></pre>
-            </div>
-            <div class="sidebar">
-                <h3>Html Nodes</h3>
-                <ul id="html-elements-list"></ul>
-            </div>
-        </div>
-        <h2>Token</h2>
+        <a class="hash" href="#token">
+            <h3 id="token">
+                <svg aria-hidden="true" class="icon__link" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                </svg>
+                Token
+            </h3>
+        </a>
         <div class="body">
             <div class="content">
                 <pre><code id="markup"></code></pre>
@@ -42,8 +44,41 @@
                 <ul id="types-list" class="types"></ul>
             </div>
         </div>
+        <a class="hash" href="#htmlNode">
+            <h3 id="htmlNode">
+                <svg aria-hidden="true" class="icon__link" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                </svg>
+                Html.Node
+            </h3>
+        </a>
+        <div class="body">
+            <div class="content">
+                <pre><code id="htmlCode"></code></pre>
+            </div>
+            <div class="sidebar">
+                <h3>Html Nodes</h3>
+                <ul id="html-elements-list"></ul>
+            </div>
+        </div>
+        <a class="hash" href="#ast">
+            <h3 id="ast">
+                <svg aria-hidden="true" class="icon__link" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                </svg>
+                AST
+            </h3>
+        </a>
+        <div class="body">
+            <div class="content">
+                <pre id="astCode"></pre>
+            </div>
+            <div class="sidebar">
+                <h3>Ast Nodes</h3>
+                <ul id="ast-list"></ul>
+            </div>
+        </div>
     </div>
-
     <script src="bundle.js"></script>
 </body>
 </html>
