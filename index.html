@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Parser</title>
+    <script src="shim.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Parser test</h1>
+        <textarea id="input"></textarea>
+        <button id="runBtn" class="btn">Parse</button>
+        <h2>AST</h2>
+        <div class="body">
+            <div class="content">
+                <pre id="astCode"></pre>
+            </div>
+            <div class="sidebar">
+                <h3>Ast Nodes</h3>
+                <ul id="ast-list"></ul>
+            </div>
+        </div>
+        <h2>html.Node</h2>
+        <div class="body">
+            <div class="content">
+                <pre><code id="htmlCode"></code></pre>
+            </div>
+            <div class="sidebar">
+                <h3>Html Nodes</h3>
+                <ul id="html-elements-list"></ul>
+            </div>
+        </div>
+        <h2>Token</h2>
+        <div class="body">
+            <div class="content">
+                <pre><code id="markup"></code></pre>
+            </div>
+            <div class="sidebar">
+                <h3>TokenType</h3>
+                <ul id="types-list" class="types"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
