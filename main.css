@@ -9,7 +9,7 @@ body {
 }
 .container {
     margin: 80px auto;
-    max-width: 980px;
+    width: 980px;
     padding: 25px;
     box-sizing: border-box;
     background: #fff;
