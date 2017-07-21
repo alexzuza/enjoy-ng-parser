@@ -33,7 +33,7 @@ body {
 
 .logo {
     display: flex;
-    max-width: 958px;
+    width: 958px;
     margin: 0 auto;
     text-decoration: none;
     color: #fff;
