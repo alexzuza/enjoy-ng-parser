@@ -7,6 +7,21 @@ body {
     text-align: center;
     -webkit-font-smoothing: antialiased;
 }
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #394F65 radial-gradient(#394F65, #090909);
+}
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
 .container {
     margin: 80px auto;
     width: 980px;
@@ -161,4 +176,3 @@ span[data-highlight]:hover {
     line-height: 34px;
     cursor: pointer;
 }
-/*# sourceMappingURL=main.css.map*/
