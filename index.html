@@ -9,7 +9,7 @@
     <script src="shim.min.js"></script>
 </head>
 <body>
-     <div class="header">
+      <div class="header">
         <a class="logo" href="/">
             <svg height="60" version="1.1" viewBox="0, 0, 500, 500" width="60" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -26,7 +26,9 @@
     <div class="container">
         <h2>Template</h2>
         <textarea id="input"></textarea>
-        <button id="runBtn" class="btn">Parse</button>
+        <div class="ta-right">
+            <button id="runBtn" class="btn">Parse</button>
+        </div>
         <a class="hash" href="#token">
             <h3 id="token">
                 <svg aria-hidden="true" class="icon__link" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -40,7 +42,6 @@
                 <pre><code id="markup"></code></pre>
             </div>
             <div class="sidebar">
-                <h3>TokenType</h3>
                 <ul id="types-list" class="types"></ul>
             </div>
         </div>
@@ -57,7 +58,6 @@
                 <pre><code id="htmlCode"></code></pre>
             </div>
             <div class="sidebar">
-                <h3>Html Nodes</h3>
                 <ul id="html-elements-list"></ul>
             </div>
         </div>
@@ -74,7 +74,6 @@
                 <pre id="astCode"></pre>
             </div>
             <div class="sidebar">
-                <h3>Ast Nodes</h3>
                 <ul id="ast-list"></ul>
             </div>
         </div>
