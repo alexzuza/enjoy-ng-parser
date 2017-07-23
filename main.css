@@ -90,10 +90,11 @@ h2 {
 }
 pre {
     padding: 20px;
-    background: #333;
+    background: #272822;
     color: #fff;
     font-size: 16px;
     margin: 10px 0;
+    overflow: auto;
 }
 .content {
     width: 70%;
@@ -194,4 +195,77 @@ span[data-highlight]:hover {
 .ta-right {
     text-align: right;
 }
+
+/* highlight theme */
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+}
+
+.hljs,.hljs-subst {
+    color: #F8F8F2;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Arial;
+}
+
+.hljs-comment {
+    color: #888888
+}
+
+.hljs-keyword,.hljs-attribute,.hljs-selector-tag,.hljs-meta-keyword,.hljs-doctag,.hljs-name {
+
+}
+
+.hljs-keyword {
+    color: #60D1E7;
+}
+
+.hljs-type,.hljs-string,.hljs-number,.hljs-selector-id,.hljs-selector-class,.hljs-quote,.hljs-template-tag,.hljs-deletion {
+    color: #880000
+}
+
+.hljs-string {
+    color: #E6DB74;
+}
+.hljs-number {
+    color: #AE81FF;
+}
+
+.hljs-params {
+    color: #FD971F;
+}
+.hljs-title,.hljs-section {
+    color: #A6E22E;
+}
+
+.hljs-regexp,.hljs-symbol,.hljs-variable,.hljs-template-variable,.hljs-link,.hljs-selector-attr,.hljs-selector-pseudo {
+    color: #BC6060
+}
+
+.hljs-literal {
+    color: #78A960
+}
+
+.hljs-built_in,.hljs-bullet,.hljs-code,.hljs-addition {
+    color: #397300
+}
+
+.hljs-meta {
+    color: #1f7199
+}
+
+.hljs-meta-string {
+    color: #4d99bf
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: bold
+}
+/* end highlight theme */
 /*# sourceMappingURL=main.css.map*/
