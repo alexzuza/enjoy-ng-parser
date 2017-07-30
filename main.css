@@ -63,7 +63,7 @@ body {
 
 .hash {
     display: block;
-    margin-top: 20px;
+    margin-top: 60px;
     font-size: 20px;
     color: #369;
     text-decoration: none;
@@ -152,6 +152,13 @@ span[data-highlight]:hover {
 }
 
 
+.hover .hover {
+    background: darkgreen !important;
+}
+
+[data-highlight]:hover [data-highlight]:hover {
+    background: darkgreen !important;
+}
 #input {
     width: 100%;
     box-sizing: border-box;
@@ -196,6 +203,10 @@ span[data-highlight]:hover {
     text-align: right;
 }
 
+.overflow-auto {
+    overflow: auto;
+}
+
 /* highlight theme */
 .hljs {
     display: block;
@@ -212,10 +223,6 @@ span[data-highlight]:hover {
 
 .hljs-comment {
     color: #888888
-}
-
-.hljs-keyword,.hljs-attribute,.hljs-selector-tag,.hljs-meta-keyword,.hljs-doctag,.hljs-name {
-
 }
 
 .hljs-keyword {
